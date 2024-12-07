@@ -1,0 +1,108 @@
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+.main {
+    min-width: 100vh;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .container  {
+    display: grid;
+    grid-template-areas: "image info";
+    grid-template-columns: 1fr 1fr;
+    width: 580px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.main .container .image {
+    grid-area: image;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.main .container .info {
+    grid-area: info;
+    padding: 30px;
+}
+
+.main .container .info .category {
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 5px;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+
+.main .container .info .main-title {
+    color: hsl(212, 21%, 14%);
+    font-family: "Fraunces", sans-serif;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+
+.main .container .info .main-info {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    line-height: 23px;
+    margin-bottom: 20px;
+}
+
+.main .container .info .price {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.main .container .info .price .main-price {
+    color: hsl(158, 36%, 37%);
+    font-family: "Fraunces", sans-serif;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.main .container .info .price .discount {
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    align-self: center;
+    padding-left: 20px;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+
+.main .container .info .purchase-cart {
+    background-color: hsl(158, 36%, 37%);
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    border: none;
+    width: 100%;
+}
+
+.main .container .info .purchase-cart::before {
+    content: url(../images/icon-cart.svg);
+    margin-right: 10px;
+}
+
+.main .container .info .purchase-cart:hover {
+    transition: 0.3s ease-in-out;
+    background-color: hsl(158, 36%, 21%);
+}
+
+
+
+
+
